@@ -55,12 +55,6 @@ build CMakeFiles/CPP_For_Beginning.dir/main.cpp.obj: CXX_COMPILER__CPP_For_Begin
   OBJECT_DIR = CMakeFiles\CPP_For_Beginning.dir
   OBJECT_FILE_DIR = CMakeFiles\CPP_For_Beginning.dir
 
-build CMakeFiles/CPP_For_Beginning.dir/GettingStarted/FirstProgram.cpp.obj: CXX_COMPILER__CPP_For_Beginning_Debug D$:/FINAL_DSA/CPP_For_Beginning/GettingStarted/FirstProgram.cpp || cmake_object_order_depends_target_CPP_For_Beginning
-  DEP_FILE = CMakeFiles\CPP_For_Beginning.dir\GettingStarted\FirstProgram.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\CPP_For_Beginning.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_For_Beginning.dir\GettingStarted
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPP_For_Beginning
@@ -69,7 +63,7 @@ build CMakeFiles/CPP_For_Beginning.dir/GettingStarted/FirstProgram.cpp.obj: CXX_
 #############################################
 # Link the executable CPP_For_Beginning.exe
 
-build CPP_For_Beginning.exe: CXX_EXECUTABLE_LINKER__CPP_For_Beginning_Debug CMakeFiles/CPP_For_Beginning.dir/main.cpp.obj CMakeFiles/CPP_For_Beginning.dir/GettingStarted/FirstProgram.cpp.obj
+build CPP_For_Beginning.exe: CXX_EXECUTABLE_LINKER__CPP_For_Beginning_Debug CMakeFiles/CPP_For_Beginning.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP_For_Beginning.dir
