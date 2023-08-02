@@ -1,12 +1,10 @@
 //
-// Created by diwash on 30/07/2023.
+// Created by diwash on 31/07/2023.
 //
 
 #include <iostream>
 
 using namespace std;
-
-// Bruteforce method with time complexity O(N^3)
 
 int printSubArray(int arr[], int sizeOfArray) {
     int largestSum = 0;
