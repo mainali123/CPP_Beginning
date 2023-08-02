@@ -40,10 +40,27 @@ int printSubArray2(int arr[], int sizeOfArray) {
     return largestSum;
 }
 
+// Kadane's Method with time complexity O(N)
+int printSubArray3(int arr[], int sizeOfArray) {
+    int currentSum = 0;
+    int maximumSum = 0;
+
+    for (int i = 0; i < sizeOfArray; ++i) {
+        if (currentSum + arr[i] < 0) {
+            currentSum = 0;
+        } else {
+            currentSum += arr[i];
+        }
+        maximumSum = max(maximumSum, currentSum);
+    }
+    return maximumSum;
+}
+
 int main() {
     int arr[] = {-2, 3, 4, -1, 5, -12, 6, 1, 3};
     int sizeOfArray = sizeof(arr) / sizeof(arr[0]);
     cout << printSubArray1(arr, sizeOfArray) << endl;
     cout << printSubArray2(arr, sizeOfArray) << endl;
+    cout << printSubArray3(arr, sizeOfArray) << endl;
     return 0;
 }
