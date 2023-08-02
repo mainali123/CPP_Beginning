@@ -34,10 +34,24 @@ vector<int> kRotate(vector<int> a, int k) {
     return ans;
 }
 
+vector<int> kRotateOptimized(vector<int> a, int k) {
+    int size = a.size();
+    int iteration = k % size;
+
+    reverse(a.begin(), a.begin() + (size - iteration));
+    reverse(a.begin() + (size - iteration), a.end());
+    reverse(a.begin(), a.end());
+    return a;
+}
+
 int main() {
     vector<int> arr = {1, 3, 5, 7, 9};
     int target = 2;
     for (int x: kRotate(arr, target)) {
+        cout << x;
+    }
+    cout<<endl;
+    for (int x: kRotateOptimized(arr, target)) {
         cout << x;
     }
     return 0;
